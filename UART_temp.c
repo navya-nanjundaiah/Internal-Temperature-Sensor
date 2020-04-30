@@ -88,17 +88,6 @@ void UART_Init(void)
       GPIO_PORTA_AMSEL_R &= ~0x03;          /*  analog functionality on PA */
 }
 
-/* UART_InChar
-* Wait for new serial port input
-* Input: none
-* Output: ASCII code for key typed
-*/
-/*char UART_InChar(void)
-{
-      while( (UART0_FR_R & UART_FR_RXFE) != 0)
-          ;
-      return((char)(UART0_DR_R & 0xFF));
-}*/
 
 /* UART_OutChar
 * Output 8-bit to serial port
