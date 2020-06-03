@@ -5,3 +5,4 @@ Displaying the internal sensor on a putty window using UART
 ## Using Texas instrument (TM4C123GH6PM)
 -It is cheap to use and is easy to implement for an enthusiast. 
 -UART compatible.
+-It has inbuit temperature sensor.
