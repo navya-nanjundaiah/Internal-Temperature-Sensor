@@ -6,3 +6,20 @@ Displaying the internal sensor on a putty window using UART
 - It is cheap to use and is easy to implement for an enthusiast. 
 - UART compatible.
 - It has inbuit temperature sensor.
+## METHOD
+- Used the Keil software to build the code and dump it on the Texas instrument
+-In the code intialized ADC and UART 
+
+### ADC Intialization
+- ADC is intialzed the clock and PE2 pin.
+- Intialzed WTimer so that the ADC is sampled per second
+
+### UART Intialization 
+- Instialzed UART0
+- Intialzed value to IRBD and FBRD
+
+#### VALUES CALCULATED BY USING THE FORMULA
+- IRBD=(CLOCK/16* baurd rate)
+- FBRD=( DECIMAL POINT OF IRBD*
+      UART0_IBRD_R = 8;        
+      UART0_FBRD_R = 44;       
