@@ -12,11 +12,11 @@ Displaying the internal sensor on a putty window using UART
 
 ### ADC Intialization
 - ADC is intialzed the clock and PE2 pin.
-- Intialzed WTimer so that the ADC is sampled per second
+- Intialized WTimer so that the ADC is sampled per second
 
 ### UART Intialization 
-- Instialzed UART0
-- Intialzed value to IRBD and FBRD
+- Instialized UART0
+- Intialized value to IRBD and FBRD
 
 #### VALUES CALCULATED BY USING THE FORMULA
 - IRBD=(CLOCK/16* baurd rate)
