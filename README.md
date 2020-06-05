@@ -20,6 +20,9 @@ Displaying the internal sensor on a putty window using UART
 
 #### VALUES CALCULATED BY USING THE FORMULA
 - IRBD=(CLOCK/16* baurd rate)
-- FBRD=( DECIM OF IR*
-      UART0_IBRD_R = 8;        
-      UART0_FBRD_R = 44;       
+- FBRD=( Decimal numbers of IRBD * 64)
+```
+      UART0_IBRD_R = 8;        /* IBRD = int(16,000,000 / (16 * 115,200)) = int(8.680) */
+      UART0_FBRD_R = 44;       /* FBRD = round(0.5104 * 64 ) = 44 */   
+```
+
