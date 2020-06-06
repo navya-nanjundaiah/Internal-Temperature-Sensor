@@ -19,10 +19,15 @@ Displaying the internal sensor on a putty window using UART
 - Intialized value to IRBD and FBRD
 
 #### VALUES CALCULATED BY USING THE FORMULA
-- IRBD=(CLOCK/16* baurd rate)
-- FBRD=( Decimal numbers of IRBD * 64)
+- IRBD=UARTSysClk / (ClkDiv * Baud Rate)
+- UARTFBRD{ DIVFRAC] = integer(BRDF * 64 + 0.5) // Add 0,5 if you have rounding errors
 ```
       UART0_IBRD_R = 8;        /* IBRD = int(16,000,000 / (16 * 115,200)) = int(8.680) */
       UART0_FBRD_R = 44;       /* FBRD = round(0.5104 * 64 ) = 44 */   
 ```
+### As alternate clock is used we set UARTCC TO 0X5
+```
+	UART0_CC_R=5;
+```
 
+### IN THE PUTTY WINDOW SELECT SERIAL AND PROVIDE SERIAL LINE AND SPEED
