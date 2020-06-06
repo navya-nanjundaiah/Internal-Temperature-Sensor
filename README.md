@@ -25,7 +25,7 @@ Displaying the internal sensor on a putty window using UART
       UART0_IBRD_R = 8;        /* IBRD = int(16,000,000 / (16 * 115,200)) = int(8.680) */
       UART0_FBRD_R = 44;       /* FBRD = round(0.5104 * 64 ) = 44 */   
 ```
-### As alternate clock is used we set UARTCC TO 0X5
+### As alternate clock is used we set UARTCC To 0X5
 ```
 	UART0_CC_R=5;
 ```
