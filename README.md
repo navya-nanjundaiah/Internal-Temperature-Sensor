@@ -18,7 +18,7 @@ Displaying the internal sensor on a putty window using UART
 - Instialized UART0
 - Intialized value to IRBD and FBRD
 
-#### Values are calculated using this formula
+### Values are calculated using this formula
 - IRBD=UARTSysClk / (ClkDiv * Baud Rate)
 - UARTFBRD{ DIVFRAC] = integer(BRDF * 64 + 0.5) // Add 0,5 if you have rounding errors
 ```
