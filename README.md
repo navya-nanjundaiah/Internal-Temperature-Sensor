@@ -32,3 +32,5 @@ Displaying the internal sensor on a putty window using UART
 
 ### In the putty window select serial and provide serial line and speed
 
+<img src="/Capture.PNG?raw=true">
+
